@@ -62,3 +62,16 @@ function playRound() {
     console.log("It's a draw!");
   }
 }
+
+function playGame() {
+  let playTimes = 5;
+
+  while (playTimes > 0) {
+    playRound();
+    playTimes--;
+  }
+
+  alert(
+    `The final score is - \n Computer Score - ${computerScore} \n Your Score - ${humanScore}`
+  );
+}
